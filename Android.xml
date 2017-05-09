@@ -1,0 +1,21 @@
+<templateSet group="Android">
+  <template name="Toast" value="android.widget.Toast.makeText($className$.this, &quot;$text$&quot;, Toast.LENGTH_SHORT).show();" description="Create a new Toast" toReformat="true" toShortenFQNames="true">
+    <variable name="className" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="rp" value="RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,&#10;        RelativeLayout.LayoutParams.WRAP_CONTENT);" description="Relative layout param" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="feedpingback" value=" new Pingback().setT(PingbackParam.LOG_TYPE_$type$)&#10;                    .setWallId($entity$.getWallId()).setFeedId($entity$.getFeedId())&#10;                    .setRpage(rpage[0]).setFeedBs($entity$.getFeedBs()).send();" toReformat="false" toShortenFQNames="true">
+    <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="entity" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>

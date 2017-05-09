@@ -1,0 +1,28 @@
+<templateSet group="user">
+  <template name="handlerpost" value="new android.os.Handler(android.os.Looper.getMainLooper()).postDelayed(new java.lang.Runnable() {&#10;            @java.lang.Override&#10;            public void run() {&#10;                android.util.Log.d(TAG, &quot;run() called with: &quot; + &quot;&quot;);&#10;            }&#10;        }, 500);" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="thread" value="new Thread(new Runnable() {&#10;    @Override&#10;        public void run() {&#10;            Log.d(&quot;shitshit&quot;, &quot;run() called with: &quot; + &quot;&quot;);&#10;        }&#10;    }).start();" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="threadsleep" value="try {&#10;    Thread.sleep(60000);&#10;} catch (InterruptedException e) {&#10;    e.printStackTrace();&#10;}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="fragmentvisible" value="@Override&#10;public void setUserVisibleHint(boolean isVisibleToUser) {&#10;    super.setUserVisibleHint(isVisibleToUser);&#10;    Log.d(&quot;shitshit&quot;, &quot;setUserVisibleHint() called with: &quot; + &quot;isVisibleToUser = [&quot; + isVisibleToUser + &quot;]&quot;);&#10;    if(isVisibleToUser) {&#10;        StatisticAgent.saveUserAction(PingbackParam.PAGE_SESSION, PingbackParam.LOG_TYPE);&#10;    }&#10;}" description="在Fragment显示出来时提示，但是注意onResume时不会执行此方法" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="xxml" value="/Users/Fridge/PycharmProjects/iammad/xml/&#10;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>
