@@ -1,0 +1,12 @@
+<templateSet group="AndrodiAnnotationDefine">
+  <template name="defint" value="@Retention(RetentionPolicy.SOURCE)&#10;@IntDef({ $name$.$1$, $name$.$2$, $name$.$3$, $name$.$4$ })&#10;public @interface $name$ {&#10;    int $1$ = 0;&#10;    int $2$ = 1;&#10;    int $3$ = 2;&#10;    int $4$ = 3;&#10;}" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+</templateSet>
